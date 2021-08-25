@@ -1,0 +1,20 @@
+.animal-card {
+  cursor: pointer;
+  user-select: none;
+  transition: all .3s linear;
+}
+
+.animal-card.active{
+  transform: scale(1.5);
+  z-index: 99999;
+}
+
+.animal-card:active, .animal-card:focus{
+  transform: rotateY(360deg);
+}
+
+.animal-card img{
+  height: 250px;
+  object-fit: cover;
+  object-position: top center;
+}
